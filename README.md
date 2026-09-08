@@ -30,6 +30,29 @@
 
 **English:** Note Bridge is a Windows app for exporting notes to TXT, Markdown, HTML or DOCX and migrating selected notes across seven cloud platforms. It preserves source notes and reports format differences and uncertain writes. [Case study](docs/PROJECT-CASE.md#english-summary) · [Validation scope](docs/VERIFICATION.md)
 
+<details>
+<summary><strong>目录</strong></summary>
+
+- [快速上手](#快速上手)
+- [用它做什么](#用它做什么)
+- [下载与启动](#下载与启动)
+- [开始迁移](#开始迁移)
+- [支持范围](#支持范围)
+- [常见问题](#常见问题)
+- [反馈与贡献](#反馈与贡献)
+
+</details>
+
+## 快速上手
+
+第一次使用，建议按 **安装 → 先试导出 → 再迁移** 的顺序：导出只需登录来源账号，结果保存在本地，最容易熟悉流程。
+
+1. **下载安装。** 运行 [Windows 安装包](https://github.com/lingxuanqjc-alt/note-bridge-desktop/releases/download/v1.0.0/NoteBridge-1.0.0-setup.exe)，完成后双击桌面“笔记互迁”。需要 Windows 10／11 x64 与 Microsoft WebView2 Runtime；缺少 WebView2 时安装程序会引导前往微软官方页面。
+2. **先试导出。** 打开“导出笔记”页：登录来源平台 → 获取笔记 → 选择 TXT／Markdown／HTML／Word 与文件模式 → 导出到本地。
+3. **再做迁移。** 打开“迁移笔记”页，登录迁出、迁入双方账号 → 点击“开始迁移” → 勾选笔记 → 点击“确认迁移 N 条”。完成后到目标端核对正文、图片与分组。
+
+迁移向目标云端新增笔记，保留来源。每一步的细节与提示含义见[使用指南](docs/GUIDE.md)，下载文件与校验见[下载与启动](#下载与启动)。
+
 ## 用它做什么
 
 | 你想做的事 | 笔记互迁提供的功能 |
@@ -54,6 +77,8 @@
 [下载与文件校验](docs/DOWNLOAD.md) · [查看版本说明](https://github.com/lingxuanqjc-alt/note-bridge-desktop/releases/tag/v1.0.0)
 
 ## 开始迁移
+
+> 迁移向目标云端**新增**笔记，保留来源。可以先导出备份，再选择一条笔记熟悉流程。
 
 1. **确认来源。** 来源云端已有笔记即可；尚未上传的内容，需要先从原手机开启笔记云同步，等待上传。
 2. **登录双方账号。** 在软件“迁移笔记”页选择迁出、迁入平台，在打开的官方窗口完成登录，再检查账号状态。
