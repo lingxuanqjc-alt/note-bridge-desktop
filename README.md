@@ -13,6 +13,12 @@
   <a href="docs/COMPATIBILITY.md">兼容性说明</a> ·
   <a href="https://github.com/lingxuanqjc-alt/note-bridge-desktop/issues/new/choose">反馈问题</a>
 </p>
+<p align="center">
+  <a href="https://github.com/lingxuanqjc-alt/note-bridge-desktop/releases/latest"><img src="https://img.shields.io/github/v/release/lingxuanqjc-alt/note-bridge-desktop?label=%E7%89%88%E6%9C%AC" alt="当前版本"></a>
+  <a href="https://github.com/lingxuanqjc-alt/note-bridge-desktop/actions/workflows/ci.yml"><img src="https://github.com/lingxuanqjc-alt/note-bridge-desktop/actions/workflows/ci.yml/badge.svg" alt="Offline checks"></a>
+  <img src="https://img.shields.io/badge/%E5%B9%B3%E5%8F%B0-Windows%2010%2F11%20x64-blue" alt="Windows 10/11 x64">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-MIT-green" alt="MIT 许可"></a>
+</p>
 
 换了手机品牌，旧笔记却留在原来的云端。笔记互迁是一款 Windows 桌面工具，帮助你选择具体笔记迁入另一个平台，或导出成可以自己保存、阅读和搜索的本地文件。
 
