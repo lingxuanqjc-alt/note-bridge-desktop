@@ -1,0 +1,1637 @@
+{
+  "version": "0.1.0a1",
+  "updated": "2026-09-07",
+  "exports": [
+    {
+      "platform": "xiaomi",
+      "format": "txt",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-020618-760d21/evidence.json"
+    },
+    {
+      "platform": "xiaomi",
+      "format": "txt",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-020618-760d21/evidence.json"
+    },
+    {
+      "platform": "xiaomi",
+      "format": "md",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-020618-760d21/evidence.json"
+    },
+    {
+      "platform": "xiaomi",
+      "format": "md",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-020618-760d21/evidence.json"
+    },
+    {
+      "platform": "xiaomi",
+      "format": "html",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-020618-760d21/evidence.json"
+    },
+    {
+      "platform": "xiaomi",
+      "format": "html",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-020618-760d21/evidence.json"
+    },
+    {
+      "platform": "xiaomi",
+      "format": "docx",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-020618-760d21/evidence.json"
+    },
+    {
+      "platform": "xiaomi",
+      "format": "docx",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-020618-760d21/evidence.json"
+    },
+    {
+      "platform": "oppo",
+      "format": "txt",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260906-214128-4e30bb/evidence.json"
+    },
+    {
+      "platform": "oppo",
+      "format": "txt",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260906-214128-4e30bb/evidence.json"
+    },
+    {
+      "platform": "oppo",
+      "format": "md",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260906-214128-4e30bb/evidence.json"
+    },
+    {
+      "platform": "oppo",
+      "format": "md",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260906-214128-4e30bb/evidence.json"
+    },
+    {
+      "platform": "oppo",
+      "format": "html",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260906-214128-4e30bb/evidence.json"
+    },
+    {
+      "platform": "oppo",
+      "format": "html",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260906-214128-4e30bb/evidence.json"
+    },
+    {
+      "platform": "oppo",
+      "format": "docx",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260906-214128-4e30bb/evidence.json"
+    },
+    {
+      "platform": "oppo",
+      "format": "docx",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260906-214128-4e30bb/evidence.json"
+    },
+    {
+      "platform": "vivo",
+      "format": "txt",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-030806-bf4ff5/evidence.json"
+    },
+    {
+      "platform": "vivo",
+      "format": "txt",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-030806-bf4ff5/evidence.json"
+    },
+    {
+      "platform": "vivo",
+      "format": "md",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-030806-bf4ff5/evidence.json"
+    },
+    {
+      "platform": "vivo",
+      "format": "md",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-030806-bf4ff5/evidence.json"
+    },
+    {
+      "platform": "vivo",
+      "format": "html",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-030806-bf4ff5/evidence.json"
+    },
+    {
+      "platform": "vivo",
+      "format": "html",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-030806-bf4ff5/evidence.json"
+    },
+    {
+      "platform": "vivo",
+      "format": "docx",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-030806-bf4ff5/evidence.json"
+    },
+    {
+      "platform": "vivo",
+      "format": "docx",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-030806-bf4ff5/evidence.json"
+    },
+    {
+      "platform": "huawei",
+      "format": "txt",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045415-f1577f/evidence.json"
+    },
+    {
+      "platform": "huawei",
+      "format": "txt",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045415-f1577f/evidence.json"
+    },
+    {
+      "platform": "huawei",
+      "format": "md",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045415-f1577f/evidence.json"
+    },
+    {
+      "platform": "huawei",
+      "format": "md",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045415-f1577f/evidence.json"
+    },
+    {
+      "platform": "huawei",
+      "format": "html",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045415-f1577f/evidence.json"
+    },
+    {
+      "platform": "huawei",
+      "format": "html",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045415-f1577f/evidence.json"
+    },
+    {
+      "platform": "huawei",
+      "format": "docx",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045415-f1577f/evidence.json"
+    },
+    {
+      "platform": "huawei",
+      "format": "docx",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045415-f1577f/evidence.json"
+    },
+    {
+      "platform": "honor",
+      "format": "txt",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045410-b517dc/evidence.json"
+    },
+    {
+      "platform": "honor",
+      "format": "txt",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045410-b517dc/evidence.json"
+    },
+    {
+      "platform": "honor",
+      "format": "md",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045410-b517dc/evidence.json"
+    },
+    {
+      "platform": "honor",
+      "format": "md",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045410-b517dc/evidence.json"
+    },
+    {
+      "platform": "honor",
+      "format": "html",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045410-b517dc/evidence.json"
+    },
+    {
+      "platform": "honor",
+      "format": "html",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045410-b517dc/evidence.json"
+    },
+    {
+      "platform": "honor",
+      "format": "docx",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045410-b517dc/evidence.json"
+    },
+    {
+      "platform": "honor",
+      "format": "docx",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045410-b517dc/evidence.json"
+    },
+    {
+      "platform": "meizu",
+      "format": "txt",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045413-9c46e9/evidence.json"
+    },
+    {
+      "platform": "meizu",
+      "format": "txt",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045413-9c46e9/evidence.json"
+    },
+    {
+      "platform": "meizu",
+      "format": "md",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045413-9c46e9/evidence.json"
+    },
+    {
+      "platform": "meizu",
+      "format": "md",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045413-9c46e9/evidence.json"
+    },
+    {
+      "platform": "meizu",
+      "format": "html",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045413-9c46e9/evidence.json"
+    },
+    {
+      "platform": "meizu",
+      "format": "html",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045413-9c46e9/evidence.json"
+    },
+    {
+      "platform": "meizu",
+      "format": "docx",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045413-9c46e9/evidence.json"
+    },
+    {
+      "platform": "meizu",
+      "format": "docx",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-045413-9c46e9/evidence.json"
+    },
+    {
+      "platform": "wps",
+      "format": "txt",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-035952-65ecf6/evidence.json"
+    },
+    {
+      "platform": "wps",
+      "format": "txt",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-035952-65ecf6/evidence.json"
+    },
+    {
+      "platform": "wps",
+      "format": "md",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-035952-65ecf6/evidence.json"
+    },
+    {
+      "platform": "wps",
+      "format": "md",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-035952-65ecf6/evidence.json"
+    },
+    {
+      "platform": "wps",
+      "format": "html",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-035952-65ecf6/evidence.json"
+    },
+    {
+      "platform": "wps",
+      "format": "html",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-035952-65ecf6/evidence.json"
+    },
+    {
+      "platform": "wps",
+      "format": "docx",
+      "mode": "single",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-035952-65ecf6/evidence.json"
+    },
+    {
+      "platform": "wps",
+      "format": "docx",
+      "mode": "multi",
+      "status": "smoke_only",
+      "evidence": ".private/live-exports/20260907-035952-65ecf6/evidence.json"
+    }
+  ],
+  "migrations": [
+    {
+      "source": "xiaomi",
+      "target": "oppo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "xiaomi",
+      "target": "vivo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "xiaomi",
+      "target": "huawei",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "xiaomi",
+      "target": "honor",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "xiaomi",
+      "target": "meizu",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "xiaomi",
+      "target": "wps",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "oppo",
+      "target": "xiaomi",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "oppo",
+      "target": "vivo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "oppo",
+      "target": "huawei",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "oppo",
+      "target": "honor",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "oppo",
+      "target": "meizu",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "oppo",
+      "target": "wps",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "vivo",
+      "target": "xiaomi",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "vivo",
+      "target": "oppo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "vivo",
+      "target": "huawei",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "vivo",
+      "target": "honor",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "vivo",
+      "target": "meizu",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "vivo",
+      "target": "wps",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "huawei",
+      "target": "xiaomi",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "huawei",
+      "target": "oppo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "huawei",
+      "target": "vivo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "huawei",
+      "target": "honor",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "huawei",
+      "target": "meizu",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "huawei",
+      "target": "wps",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "honor",
+      "target": "xiaomi",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "honor",
+      "target": "oppo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "honor",
+      "target": "vivo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "honor",
+      "target": "huawei",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "honor",
+      "target": "meizu",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "honor",
+      "target": "wps",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "meizu",
+      "target": "xiaomi",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "meizu",
+      "target": "oppo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "meizu",
+      "target": "vivo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "meizu",
+      "target": "huawei",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "meizu",
+      "target": "honor",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "meizu",
+      "target": "wps",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "wps",
+      "target": "xiaomi",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "wps",
+      "target": "oppo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "wps",
+      "target": "vivo",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "wps",
+      "target": "huawei",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "wps",
+      "target": "honor",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "source": "wps",
+      "target": "meizu",
+      "status": "pending",
+      "evidence": null
+    }
+  ],
+  "desktop": [
+    {
+      "os": "Windows 10",
+      "scale": 100,
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "os": "Windows 10",
+      "scale": 125,
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "os": "Windows 10",
+      "scale": 150,
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "os": "Windows 11",
+      "scale": 100,
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "os": "Windows 11",
+      "scale": 125,
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "os": "Windows 11",
+      "scale": 150,
+      "status": "pending",
+      "evidence": null
+    }
+  ],
+  "visual": [
+    {
+      "page": "initial",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "page": "selected",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "page": "login",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "page": "format",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "page": "progress",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "page": "success",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "page": "failure",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "page": "migrate",
+      "status": "pending",
+      "evidence": null
+    }
+  ],
+  "development_checks": {
+    "formal_acceptance": false,
+    "cloud_fixture_creates": [
+      {
+        "platform": "xiaomi",
+        "evidence": ".private/evidence/fixture-20260906-xiaomi-A1.json"
+      },
+      {
+        "platform": "oppo",
+        "evidence": ".private/evidence/fixture-20260906-oppo-A1.json"
+      },
+      {
+        "platform": "vivo",
+        "evidence": ".private/evidence/fixture-20260906-vivo-A1.json"
+      },
+      {
+        "platform": "wps",
+        "evidence": ".private/evidence/fixture-20260906-wps-A2.json"
+      },
+      {
+        "platform": "huawei",
+        "evidence": ".private/evidence/fixture-20260906-huawei-C1.json"
+      },
+      {
+        "platform": "honor",
+        "evidence": ".private/evidence/fixture-20260906-honor-C1.json"
+      },
+      {
+        "platform": "meizu",
+        "evidence": ".private/evidence/fixture-20260906-meizu-C1.json"
+      }
+    ],
+    "initial_card_geometry": ".private/evidence/geometry-comparison.json",
+    "offline_reader": ".private/evidence/reader/evidence.json",
+    "installer_developer_host": ".private/evidence/installer-BI/evidence.json",
+    "vivo_image_create": ".private/evidence/fixture-20260906-vivo-image-B3.json",
+    "local_tests": 1685,
+    "cloud_note_counts": {
+      "original": 554,
+      "synthetic_fixtures": 99,
+      "other_cached_test_drafts": 5,
+      "cached_total": 658,
+      "by_platform": {
+        "honor": 23,
+        "huawei": 13,
+        "meizu": 23,
+        "oppo": 4,
+        "vivo": 556,
+        "wps": 28,
+        "xiaomi": 11
+      },
+      "basis": "local cache and existing verified checkpoint; not a new cloud read",
+      "recorded_checkpoint": "AS historical; not current cloud inventory"
+    },
+    "vivo_official_image_preview": ".private/evidence/vivo-image-browser.json",
+    "vivo_full_refetch": ".private/evidence/vivo-refetch-C1.json",
+    "wps_to_vivo_R1": ".private/evidence/wps-vivo-R1-chain.json",
+    "honor_N2_group_browser": ".private/evidence/honor-image-browser.json",
+    "honor_to_wps_R2": ".private/evidence/honor-wps-R2-chain.json",
+    "honor_rich_S2": ".private/evidence/fixture-20260906-honor-rich-S2.json",
+    "package_verification": ".private/evidence/artifacts-BI.json",
+    "complex_batch_records": [
+      ".private/evidence/matrix-20260906-honor-huawei-AA3.json",
+      ".private/evidence/matrix-20260906-honor-huawei-AA6.json",
+      ".private/evidence/matrix-20260906-honor-meizu-U1.json",
+      ".private/evidence/matrix-20260906-honor-meizu-U3.json",
+      ".private/evidence/matrix-20260906-honor-meizu-Z3.json",
+      ".private/evidence/matrix-20260906-honor-wps-U2.json",
+      ".private/evidence/matrix-20260906-honor-wps-Z2.json",
+      ".private/evidence/matrix-20260906-meizu-honor-Y1.json",
+      ".private/evidence/matrix-20260906-meizu-huawei-AA2.json",
+      ".private/evidence/matrix-20260906-meizu-huawei-AA5.json",
+      ".private/evidence/matrix-20260906-meizu-wps-Y2.json",
+      ".private/evidence/matrix-20260906-vivo-honor-W2.json",
+      ".private/evidence/matrix-20260906-vivo-honor-W5.json",
+      ".private/evidence/matrix-20260906-vivo-huawei-W4.json",
+      ".private/evidence/matrix-20260906-vivo-meizu-W1.json",
+      ".private/evidence/matrix-20260906-vivo-wps-W3.json",
+      ".private/evidence/matrix-20260906-wps-honor-AA1.json",
+      ".private/evidence/matrix-20260906-wps-meizu-Z1.json",
+      ".private/evidence/matrix-20260906-wps-meizu-Z4.json",
+      ".private/evidence/matrix-20260907-honor-huawei-BD19.json",
+      ".private/evidence/matrix-20260907-honor-vivo-BC4.json",
+      ".private/evidence/matrix-20260907-honor-xiaomi-BD7.json",
+      ".private/evidence/matrix-20260907-huawei-meizu-BD16.json",
+      ".private/evidence/matrix-20260907-huawei-vivo-BD17.json",
+      ".private/evidence/matrix-20260907-huawei-wps-BD14.json",
+      ".private/evidence/matrix-20260907-huawei-xiaomi-BD13.json",
+      ".private/evidence/matrix-20260907-meizu-vivo-BD11.json",
+      ".private/evidence/matrix-20260907-meizu-xiaomi-BD8.json",
+      ".private/evidence/matrix-20260907-vivo-wps-AL1.json",
+      ".private/evidence/matrix-20260907-vivo-xiaomi-AD1.json",
+      ".private/evidence/matrix-20260907-wps-huawei-BD18.json",
+      ".private/evidence/matrix-20260907-wps-meizu-BD12.json",
+      ".private/evidence/matrix-20260907-wps-vivo-AK1.json",
+      ".private/evidence/matrix-20260907-wps-xiaomi-AD2.json",
+      ".private/evidence/matrix-20260907-wps-xiaomi-AD5.json",
+      ".private/evidence/matrix-20260907-wps-xiaomi-BD4.json",
+      ".private/evidence/matrix-20260907-xiaomi-honor-BC1.json",
+      ".private/evidence/matrix-20260907-xiaomi-huawei-BC3.json",
+      ".private/evidence/matrix-20260907-xiaomi-meizu-BC2.json",
+      ".private/evidence/matrix-20260907-xiaomi-vivo-AK2.json",
+      ".private/evidence/matrix-20260907-xiaomi-wps-AK3.json",
+      ".private/evidence/matrix-20260907-huawei-honor-BD15.json",
+      ".private/evidence/matrix-20260907-wps-huawei-BD20.json"
+    ],
+    "latest_native_evidence": [
+      ".private/evidence/oppo-target-native-6d50c792b3844cfab8138995ec0d4ab9.json",
+      ".private/evidence/oppo-target-native-b33370dccbd246bb8f65b59340c55480.json",
+      ".private/evidence/oppo-target-native-d34b1db124b24ee4abff02f521137073.json",
+      ".private/evidence/oppo-target-native-d5681de793574a6e8f0312895380927f.json",
+      ".private/evidence/oppo-target-native-e23ef98a324d48179c4fbfa3775a95c7.json",
+      ".private/evidence/oppo-target-native-6f394a7c8caf4c02923e80068bb5e644.json",
+      ".private/evidence/oppo-target-native-6903b7c1e21c4c80bbbb775830e63019.json"
+    ],
+    "latest_build": {
+      "batch": "BI",
+      "recorded_at": "2026-09-07T13:14:55.122769+00:00",
+      "tests": 1685,
+      "installer_checks": 9,
+      "portable_files": 2349,
+      "artifact_evidence": ".private/evidence/artifacts-BI.json",
+      "source_matches_binary_production": true,
+      "current_source_requires_new_build": false,
+      "final_source_evidence": ".private/evidence/final-BI.json",
+      "final_source_status": "See separate immutable integrity record after documentation refresh.",
+      "formal_acceptance": false,
+      "successful_full_run": ".private/build-BI.log"
+    },
+    "current_cache_metadata": {
+      "recorded_at": "2026-09-07T13:24:06+08:00",
+      "basis": "read-only local snapshot metadata, one account row per platform; no note bodies read; these counts do not add export acceptance",
+      "by_platform": {
+        "oppo": {
+          "count": 4,
+          "complete": true
+        },
+        "huawei": {
+          "count": 19,
+          "complete": true
+        },
+        "honor": {
+          "count": 28,
+          "complete": true
+        },
+        "xiaomi": {
+          "count": 20,
+          "complete": true
+        },
+        "vivo": {
+          "count": 560,
+          "complete": false
+        },
+        "meizu": {
+          "count": 32,
+          "complete": true
+        },
+        "wps": {
+          "count": 31,
+          "complete": true
+        }
+      },
+      "vivo_scoped_readback": {
+        "count": 25,
+        "complete_within_scope": true,
+        "whole_account_snapshot": false,
+        "evidence": ".private/evidence/matrix-20260907-huawei-vivo-BD17.json"
+      }
+    },
+    "current_scope_decision": "docs/REMAINING-WORK.md",
+    "parallel_lab_tests": 72,
+    "direction_record_snapshot": {
+      "recorded_at": "2026-09-07T07:42:44.876901+00:00",
+      "scope": "six non-OPPO platforms; unique source-target directions",
+      "directions_with_batch_records": 30,
+      "directions_with_original_api_verified_batch": 26,
+      "directions_total": 30,
+      "missing_batch_directions": [],
+      "formal_directions_passed": 0,
+      "formal_directions_total": 42,
+      "basis": "deduplicated original cloud-matrix-batch evidence; independent recoveries/native proofs separate",
+      "limitations": "BD18 and BD19 historical needs_review unchanged. BD18 first entry and BD19 both entries independently recovered; BD20 unique remaining WPS note API verified. Records do not mean full direction acceptance. Cache metadata is separately timestamped."
+    },
+    "huawei_current_checkpoint": {
+      "recorded_at": "2026-09-07T13:24:06+08:00",
+      "direct_BD2_independent_full_readback": ".private/evidence/fixture-20260907-huawei-complex-BD2-readback.json",
+      "original_17_notes_unchanged": true,
+      "only_BD2_added_in_18_note_readback": true,
+      "outgoing_fixed_source_scope": "K2 and BD2 only; 2 notes and 4 original images; whole_source_account_snapshot=false",
+      "outgoing_shared_source_post": "pending until all five fixed batches BD13-BD17 have completed; BD15 prepared only",
+      "BD13_native": ".private/parallel-read/jobs/bfb83e3a7c414e1eb151350d5e4c02ff/result.json",
+      "BD13_native_scope": "exact current editor identity; known title, image and style samples; no full-body/full-layout/phone claim",
+      "BD14_native": ".private/parallel-read/jobs/800dcc6091ca428caebee9112146704e/result.json",
+      "BD14_native_scope": "exact current editor identity, group, full ordered non-whitespace body, images and known styles; no full-layout/phone claim",
+      "BD18": {
+        "matrix_evidence": ".private/evidence/matrix-20260907-wps-huawei-BD18.json",
+        "status": "needs_review",
+        "confirmed_writes": 1,
+        "planned_notes": 2,
+        "full_read_task": "97a0929dfb3845628911b1fb60722df9",
+        "full_read_count": 19,
+        "full_read_status": "succeeded",
+        "independent_target_comparison": "confirmed first entry verified; original 18 unchanged and only this confirmed entry added; batch remains incomplete",
+        "source_post_evidence": ".private/evidence/wps-huawei-BD18-source-post.json",
+        "source_notes": 31,
+        "source_attachment_references": 46,
+        "source_post_status": "verified",
+        "independent_target_evidence": ".private/evidence/BD18-confirmed-entry-readback.json",
+        "original_18_unchanged": true,
+        "only_confirmed_addition": true,
+        "verified_image_originals": 2,
+        "linked_resources": 4,
+        "remaining_entry": {
+          "index": 1,
+          "receipt_status": "rejected",
+          "remote_id_count": 0,
+          "resource_count": 0
+        }
+      },
+      "original_evidence_unchanged": true,
+      "formal_acceptance": false,
+      "BD19": {
+        "matrix_evidence": ".private/evidence/matrix-20260907-honor-huawei-BD19.json",
+        "status": "needs_review",
+        "confirmed_writes": 2,
+        "planned_notes": 2,
+        "format_downgrade_count": 4,
+        "post_fetch_task": "8bbb8b2c04a546df98afc0c7ee070307",
+        "post_fetch_status": "failed",
+        "post_fetch_completed": 0,
+        "post_fetch_total": 21,
+        "post_fetch_code": "request_forbidden",
+        "post_fetch_http_status": 403,
+        "following_identity_check": {
+          "code": "login_incomplete",
+          "user_id_present": false,
+          "http_requests": 0
+        },
+        "independent_target_comparison": "pending; confirmed write receipts do not verify content, originals, groups or target preservation",
+        "new_original_api_verified_direction": false
+      },
+      "supplement": "BD18 independent first-entry proof and BD19 failed post-read added after the timestamp; cache metadata remains the earlier timestamped snapshot.",
+      "historical_snapshot_superseded_by": "huawei_BF_readback_closure"
+    },
+    "huawei_BF_readback_closure": {
+      "formal_acceptance": false,
+      "outgoing_batches": [
+        "BD13",
+        "BD14",
+        "BD15",
+        "BD16",
+        "BD17"
+      ],
+      "shared_source_post": ".private/evidence/huawei-BD13-BD17-source-post.json",
+      "source_scope": "exact2_direct_seeds_4images_no_whole_account_claim",
+      "original17_independent_proof": ".private/evidence/fixture-20260907-huawei-complex-BD2-readback.json",
+      "BD19_target": ".private/evidence/BD19-confirmed-entries-readback.json",
+      "BD19_source": ".private/evidence/honor-huawei-BD19-source-post.json",
+      "BD20_source": ".private/evidence/wps-huawei-BD20-source-post.json",
+      "Honor_BD7_source": ".private/evidence/honor-xiaomi-BD7-source-post.json",
+      "limitations": "Native closure incomplete; long-term session stability, phones and clean systems unverified. BF includes the new Huawei production code.",
+      "native_attempt": {
+        "status": "cancelled_unbounded_browser_wait",
+        "evidence": ".private/evidence/BF-native-huawei-cancelled.json",
+        "verified_notes": 0,
+        "local_timeout_fix_tests": 9,
+        "after_fix_cloud_test": "not_run"
+      }
+    },
+    "oppo_resume_attempt": {
+      "status": "user_confirmed_environment_risk",
+      "formal_acceptance": false,
+      "new_cloud_writes": 0,
+      "OR1_armed": false,
+      "historical_snapshot_superseded_by": "BI_closeout"
+    },
+    "latest_closeout": "BI_final_review",
+    "BI_closeout": {
+      "formal_acceptance": false,
+      "release_ready": false,
+      "version": "0.1.0a1",
+      "evidence_index": {
+        "path": ".private/checkpoints/BI-approval-facts.json",
+        "sha256": "b6fee07f124260e73d1861db19a6c529786cdd0561178ceed959dd5706c21a63"
+      },
+      "snapshot_recorded_at": "2026-09-07T11:33:52.233498+00:00",
+      "counts_and_status": {
+        "non_oppo_directions_user_confirmed": 30,
+        "non_oppo_further_tests_frozen": true,
+        "oppo_related_directions_target_content_and_source_post_verified": 12,
+        "oppo_related_notes_verified": 24,
+        "oppo_original_api_verified_batches": 11,
+        "oppo_independent_recovered_target_batches": 1,
+        "oppo_source_post_verified_directions": 12,
+        "oppo_incoming_directions": 6,
+        "oppo_outgoing_directions": 6,
+        "native_strict_targets": [
+          "wps",
+          "huawei",
+          "honor"
+        ],
+        "native_strict_notes": 6,
+        "native_strict_images": 12,
+        "xiaomi_known_visual_notes": 2,
+        "xiaomi_known_visual_images": 4,
+        "vivo_visual": "user_confirmed_normal",
+        "meizu_visual": "table_borders_absent_matches_predeclared_plain_text_degradation",
+        "oppo_target_native": "pending",
+        "latest_source_changes_built": false,
+        "formal_v1_0_0_all_requirements_passed": false
+      },
+      "directions": [
+        {
+          "source": "wps",
+          "target": "oppo",
+          "batch": "BI1",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "full_prewrite_snapshot_fingerprints_unchanged_with_exact_confirmed_additions",
+          "source_post_status": "verified",
+          "source_post_scope": "account_snapshot",
+          "format_downgrade_messages": 0,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-wps-oppo-BI1.json",
+            "sha256": "1c1e4a0c2b496687a4a6917180bf360fcaa9d6cdf5a1ec92517fe36d243625aa"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-wps-oppo-BI1.json",
+            "sha256": "1c1e4a0c2b496687a4a6917180bf360fcaa9d6cdf5a1ec92517fe36d243625aa"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/wps-oppo-BI1-source-post.json",
+            "sha256": "c8a0fe5337a67006946adb60be753f05f502ee6ff89101e22ca6678dd2bcc44d"
+          }
+        },
+        {
+          "source": "oppo",
+          "target": "wps",
+          "batch": "BI2",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "full_prewrite_snapshot_fingerprints_unchanged_with_exact_confirmed_additions",
+          "source_post_status": "verified",
+          "source_post_scope": "fixed_original_F2_OR1_only",
+          "format_downgrade_messages": 7,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-wps-BI2.json",
+            "sha256": "0e9c0e968cb7c037a16a7a902acdf59d1d79e425859b85946ca9c01534d96963"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-wps-BI2.json",
+            "sha256": "0e9c0e968cb7c037a16a7a902acdf59d1d79e425859b85946ca9c01534d96963"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/oppo-BI2-BI12-source-post-recovered.json",
+            "sha256": "9aef04893afde56006942fe1910f43fcd92588b7f1b65814d72bb01c4b28533c"
+          }
+        },
+        {
+          "source": "huawei",
+          "target": "oppo",
+          "batch": "BI3",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "full_prewrite_snapshot_fingerprints_unchanged_with_exact_confirmed_additions",
+          "source_post_status": "verified",
+          "source_post_scope": "fixed_original_two_notes",
+          "format_downgrade_messages": 0,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-huawei-oppo-BI3.json",
+            "sha256": "7863b47de4278a52b0974e5b5881668fb0d06ccfd86f00cdfe2bba3d9c4fff34"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-huawei-oppo-BI3.json",
+            "sha256": "7863b47de4278a52b0974e5b5881668fb0d06ccfd86f00cdfe2bba3d9c4fff34"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/huawei-oppo-BI3-source-post.json",
+            "sha256": "9ffccd594ae7219e91abdf1c964d0d7a712764aabfd78937d88e09eff30055a3"
+          }
+        },
+        {
+          "source": "oppo",
+          "target": "huawei",
+          "batch": "BI4",
+          "notes": 2,
+          "api_original_status": "needs_review",
+          "target_content_group_status": "verified_with_degradation_by_independent_exact_readback",
+          "target_preservation_scope": "original_22_ids_present_and_metadata_stable_during_readback_only; original_22_bodies_not_rechecked",
+          "source_post_status": "verified",
+          "source_post_scope": "fixed_original_F2_OR1_only",
+          "format_downgrade_messages": 4,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-huawei-BI4.json",
+            "sha256": "b970d51e8cdf983a22ca7dc7448d8c76de228276bf2890a134fa1967997894dc"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/huawei-BI4-readback-3c57cb6f5f6a49b79eca5a220043e922/proof.json",
+            "sha256": "d36c85e48b3cd4c71f444746fc99581339c7c6d380b3f3a764380e7c268a4ac6"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/oppo-BI2-BI12-source-post-recovered.json",
+            "sha256": "9aef04893afde56006942fe1910f43fcd92588b7f1b65814d72bb01c4b28533c"
+          }
+        },
+        {
+          "source": "xiaomi",
+          "target": "oppo",
+          "batch": "BI5",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "full_prewrite_snapshot_fingerprints_unchanged_with_exact_confirmed_additions",
+          "source_post_status": "verified",
+          "source_post_scope": "account_snapshot",
+          "format_downgrade_messages": 0,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-xiaomi-oppo-BI5.json",
+            "sha256": "05fd7dc704f5ce7c0ac1ef36b74ecfd2f965850fbde3cf9f8c8a440f764ed02e"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-xiaomi-oppo-BI5.json",
+            "sha256": "05fd7dc704f5ce7c0ac1ef36b74ecfd2f965850fbde3cf9f8c8a440f764ed02e"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/xiaomi-oppo-BI5-source-post.json",
+            "sha256": "5c4cee96cbb3cbeafe53c78f1d4cb33cfdf4497c03e7e5f26228f3f89eaed28d"
+          }
+        },
+        {
+          "source": "oppo",
+          "target": "xiaomi",
+          "batch": "BI6",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "full_prewrite_snapshot_fingerprints_unchanged_with_exact_confirmed_additions",
+          "source_post_status": "verified",
+          "source_post_scope": "fixed_original_F2_OR1_only",
+          "format_downgrade_messages": 5,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-xiaomi-BI6.json",
+            "sha256": "9e70f837e4dfb52bed62de9e58724bc943cac279e1c460cdac2817325360a422"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-xiaomi-BI6.json",
+            "sha256": "9e70f837e4dfb52bed62de9e58724bc943cac279e1c460cdac2817325360a422"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/oppo-BI2-BI12-source-post-recovered.json",
+            "sha256": "9aef04893afde56006942fe1910f43fcd92588b7f1b65814d72bb01c4b28533c"
+          }
+        },
+        {
+          "source": "honor",
+          "target": "oppo",
+          "batch": "BI7",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "full_prewrite_snapshot_fingerprints_unchanged_with_exact_confirmed_additions",
+          "source_post_status": "verified",
+          "source_post_scope": "account_snapshot",
+          "format_downgrade_messages": 0,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-honor-oppo-BI7.json",
+            "sha256": "011377d0b720aa3ddd55c3178a8e7bbaed9c6236bcb46b4c6ed19c8ed1d22750"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-honor-oppo-BI7.json",
+            "sha256": "011377d0b720aa3ddd55c3178a8e7bbaed9c6236bcb46b4c6ed19c8ed1d22750"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/honor-oppo-BI7-source-post.json",
+            "sha256": "37e3015af1f0b11516ef0ae3b69859e79c48f8b0337abc9865183f64261dc087"
+          }
+        },
+        {
+          "source": "oppo",
+          "target": "honor",
+          "batch": "BI8",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "full_prewrite_snapshot_fingerprints_unchanged_with_exact_confirmed_additions",
+          "source_post_status": "verified",
+          "source_post_scope": "fixed_original_F2_OR1_only",
+          "format_downgrade_messages": 1,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-honor-BI8.json",
+            "sha256": "6f4b4b70b10befa79613de7544e5de2718f4923c2c370ed5ada9c78497fc43df"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-honor-BI8.json",
+            "sha256": "6f4b4b70b10befa79613de7544e5de2718f4923c2c370ed5ada9c78497fc43df"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/oppo-BI2-BI12-source-post-recovered.json",
+            "sha256": "9aef04893afde56006942fe1910f43fcd92588b7f1b65814d72bb01c4b28533c"
+          }
+        },
+        {
+          "source": "meizu",
+          "target": "oppo",
+          "batch": "BI9",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "full_prewrite_snapshot_fingerprints_unchanged_with_exact_confirmed_additions",
+          "source_post_status": "verified",
+          "source_post_scope": "account_snapshot",
+          "format_downgrade_messages": 0,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-meizu-oppo-BI9.json",
+            "sha256": "2db1427f53c019bc16a05fa47cdb45fcf6e434fe6e592f5f51204f3a3e29e453"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-meizu-oppo-BI9.json",
+            "sha256": "2db1427f53c019bc16a05fa47cdb45fcf6e434fe6e592f5f51204f3a3e29e453"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/meizu-oppo-BI9-source-post.json",
+            "sha256": "23a46e29c4a24ab79dc753a59bf9f5c66ae93a0c8c84d7ac412b2842782a821a"
+          }
+        },
+        {
+          "source": "vivo",
+          "target": "oppo",
+          "batch": "BI11",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "full_prewrite_snapshot_fingerprints_unchanged_with_exact_confirmed_additions",
+          "source_post_status": "verified",
+          "source_post_scope": "fixed_original_two_notes",
+          "format_downgrade_messages": 0,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-vivo-oppo-BI11.json",
+            "sha256": "ff91b653d4b0a907738520453ce7ee96c499cf810e472af431508dc19af6ab2f"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-vivo-oppo-BI11.json",
+            "sha256": "ff91b653d4b0a907738520453ce7ee96c499cf810e472af431508dc19af6ab2f"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/vivo-oppo-BI11-source-post.json",
+            "sha256": "c80beffeebaa93da073f26dc5d38ad33f279cbf389e9c786e1a9766ac60b7541"
+          }
+        },
+        {
+          "source": "oppo",
+          "target": "vivo",
+          "batch": "BI12",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "confirmed_tool_created_ids_only; private_vivo_notes_excluded",
+          "source_post_status": "verified",
+          "source_post_scope": "fixed_original_F2_OR1_only",
+          "format_downgrade_messages": 1,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-vivo-BI12.json",
+            "sha256": "201bd7ff1e99b47c09d12a587f92689ba9219d77fdbedc7bba44a82c63ab4787"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-vivo-BI12.json",
+            "sha256": "201bd7ff1e99b47c09d12a587f92689ba9219d77fdbedc7bba44a82c63ab4787"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/oppo-BI2-BI12-source-post-recovered.json",
+            "sha256": "9aef04893afde56006942fe1910f43fcd92588b7f1b65814d72bb01c4b28533c"
+          }
+        },
+        {
+          "source": "oppo",
+          "target": "meizu",
+          "batch": "BI13",
+          "notes": 2,
+          "api_original_status": "api_verified",
+          "target_content_group_status": "api_verified",
+          "target_preservation_scope": "full_prewrite_snapshot_fingerprints_unchanged_with_exact_confirmed_additions",
+          "source_post_status": "verified",
+          "source_post_scope": "fixed_original_F2_OR1_only",
+          "format_downgrade_messages": 3,
+          "api_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-meizu-BI13.json",
+            "sha256": "88c192607742882c7c5858bb4e52bc48a28a8e324873b3ffdbabe97ffd1c20c5"
+          },
+          "target_verified_evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-meizu-BI13.json",
+            "sha256": "88c192607742882c7c5858bb4e52bc48a28a8e324873b3ffdbabe97ffd1c20c5"
+          },
+          "source_post_evidence": {
+            "path": ".private/evidence/oppo-BI2-BI12-source-post-recovered.json",
+            "sha256": "9aef04893afde56006942fe1910f43fcd92588b7f1b65814d72bb01c4b28533c"
+          }
+        }
+      ],
+      "native_and_user_evidence": {
+        "non_oppo_user": {
+          "path": ".private/evidence/user-non-oppo-acceptance-BG.json",
+          "sha256": "45e0abb9a0448b24c442e4fee7bef0562130761d55adbdb25ed6d7a6d34b9ef6"
+        },
+        "wps": {
+          "path": ".private/evidence/oppo-wps-BI2-native-summary.json",
+          "sha256": "40945f37a1d36504b95dd6d9775d712727666e46ff63ec1e75944a0eb96a9647"
+        },
+        "huawei": {
+          "path": ".private/evidence/huawei-target-native-c419e4477ee449bca881a3edec1503df.json",
+          "sha256": "b8a9976ddf901a39647d9f42ff80cbff7c471c532e97798c97fe93f6743b83e7"
+        },
+        "honor": {
+          "path": ".private/evidence/oppo-honor-BI8-native-summary.json",
+          "sha256": "665c8fed748204a1ec77e9bb657f8e519ce2ad492f4c39da792e677905afcac4"
+        },
+        "xiaomi": [
+          {
+            "path": ".private/evidence/xiaomi-BI6-native-0.json",
+            "sha256": "b484f4cea1b717f01fea8723875a924843ae8846a8c5f36c0b0cd415cb7adfb0"
+          },
+          {
+            "path": ".private/evidence/xiaomi-BI6-native-1.json",
+            "sha256": "dad73e01aa06988dd4da1efc270259233e824afbd0da475a59b76514b0e9ed5f"
+          }
+        ],
+        "vivo_meizu_user": {
+          "path": ".private/evidence/user-BI12-BI13-visual-confirmation.json",
+          "sha256": "a415c5081f708995e2c097067a285f764a9b861eff2f4604a93ca97c9cd46e1a"
+        }
+      },
+      "limitations": [
+        "42 directions are split between 30 user-accepted non-OPPO directions and 12 fixed-synthetic OPPO API/source-post scopes; this is not formal v1.0.0 certification.",
+        "OPPO destination official native verification remains pending; source OR1 API success does not imply native display success.",
+        "Huawei BI4 original report remains needs_review; independent exact-two content/group/four-originals and native checks passed, but original 22 bodies were not rechecked.",
+        "Vivo reads and verification include only explicitly bound tool-created notes; private Vivo note bodies were not read by this audit.",
+        "Xiaomi known visual checks do not cover complete whitespace, all rich text or phone synchronization.",
+        "Meizu table and other declared format degradation remain visible; missing borders are not full table-layout preservation.",
+        "WPS/Huawei/Honor native verification preserves reported degradations; it does not certify pixel-exact whitespace layout or phone synchronization.",
+        "Clean Windows 10/11 environments, all scaling/UI baselines and remaining formal release criteria are not promoted by these facts.",
+        "Latest source changes and any future OPPO activation are absent from the last BF binary until one reviewed rebuild and local install verification."
+      ],
+      "excluded_attempts": [
+        {
+          "batch": "BI10",
+          "reason": "prewrite failure; successful replacement BI13 counted once",
+          "evidence": {
+            "path": ".private/evidence/matrix-20260907-oppo-meizu-BI10.json",
+            "sha256": "33680b1285c98d4c58a5af597154bee852f99fc7be64a96b793defb7f48a793b"
+          }
+        },
+        {
+          "kind": "original_oppo_source_post",
+          "reason": "known before-body failure preserved; only independent recovered proof counted",
+          "evidence": {
+            "path": ".private/evidence/oppo-BI2-BI12-source-post.json",
+            "sha256": "6ed660b80e1d7411f8a0be885a83277e1a5af6af24898c0ea04f364d5a6d6663"
+          }
+        },
+        {
+          "kind": "native_failed_attempts",
+          "reason": "only successful per-entry evidence counted; Honor partial report contributes entry0 only, OR1 singleton contributes entry1; no duplicate entries"
+        }
+      ],
+      "binary_snapshot": {
+        "binary_generation": "BF",
+        "source_package_generation": "BH",
+        "binary_tests_passed": 1160,
+        "host_installer_checks_passed": 9,
+        "host_environment_only": true,
+        "installer_sha256": "47037a07a68360cafadd41fd49c17e26cd492a667887b2e72455c48dca413c62",
+        "portable_sha256": "7f5e688b772e7f91d9a160b7c1f0f5105818cb2790e01a93bec04b83868e1e7c",
+        "latest_changes_in_binary": false,
+        "BF_evidence": {
+          "path": ".private/evidence/final-BF.json",
+          "sha256": "d84dd5744b2b3fa1620c444a0e8a38e77946491342cba60524d1dac4bc8ea93d"
+        },
+        "BH_evidence": {
+          "path": ".private/evidence/final-BH.json",
+          "sha256": "4130dd7401b613956578ba886750c8e61edfa12a4ca33ecc4f8ab2259c631b7d"
+        }
+      },
+      "historical_snapshot_superseded_by": "BI_final_review"
+    },
+    "historical_BF_build": {
+      "batch": "BF",
+      "recorded_at": "2026-09-07T08:17:29.807646+00:00",
+      "tests": 1160,
+      "installer_checks": 9,
+      "portable_files": 2349,
+      "artifact_evidence": ".private/evidence/artifacts-BF.json",
+      "current_source_requires_new_build": false,
+      "source_matches_binary_production": true,
+      "formal_acceptance": false,
+      "initial_failed_run": ".private/build-BF.log",
+      "successful_full_run": ".private/build-BF-resume.log",
+      "only_final_docs_repackaged": true
+    },
+    "historical_pre_BI_final_native_evidence": [
+      ".private/evidence/wps-vivo-AM-native-summary.json",
+      ".private/evidence/xiaomi-vivo-AN-native-summary.json",
+      ".private/evidence/meizu-wps-AO-native-summary.json",
+      ".private/evidence/honor-wps-AP-native-summary.json",
+      ".private/evidence/vivo-AQ-table-summary.json",
+      ".private/evidence/vivo-wps-AL1-native-summary.json",
+      ".private/parallel-read/jobs/bfb83e3a7c414e1eb151350d5e4c02ff/result.json",
+      ".private/parallel-read/jobs/800dcc6091ca428caebee9112146704e/result.json"
+    ],
+    "latest_native_evidence_scope": "Seven final OPPO batches only; other-platform and user evidence retained in BI_closeout.",
+    "BI_final_review": {
+      "formal_acceptance": false,
+      "release_ready": false,
+      "version": "0.1.0a1",
+      "recorded_at": "2026-09-07T13:14:55.122769+00:00",
+      "oppo_directions": 12,
+      "matrix_notes": 24,
+      "non_oppo_user_confirmed_directions": 30,
+      "oppo_native_notes": 13,
+      "oppo_native_images": 24,
+      "native_batches": [
+        {
+          "scopes": [
+            {
+              "manifest": "oppo-complex-OR1-job.json",
+              "index": null
+            }
+          ],
+          "notes": 1,
+          "native": {
+            "path": ".private/evidence/oppo-target-native-6d50c792b3844cfab8138995ec0d4ab9.json",
+            "sha256": "deda184da711b971db1720b584b9bfcbd71f84e44a0e45bc852a57a061de45e1"
+          },
+          "repair": {
+            "path": ".private/evidence/oppo-markup-repair-fabe6a62c80247a381d3b0726f8ccea8/proof.json",
+            "sha256": "b1c613172c99f8bca972a55d4e3b79f2b59861314b7ff83e408c65c3ff1279b1"
+          }
+        },
+        {
+          "scopes": [
+            {
+              "manifest": "wps-oppo-BI1-job.json",
+              "index": 0
+            },
+            {
+              "manifest": "wps-oppo-BI1-job.json",
+              "index": 1
+            }
+          ],
+          "notes": 2,
+          "native": {
+            "path": ".private/evidence/oppo-target-native-b33370dccbd246bb8f65b59340c55480.json",
+            "sha256": "c64f7410c94ee71de8d36dabaece724a99a41f324df9e73d5e1c16dbf5ed8ebd"
+          },
+          "repair": {
+            "path": ".private/evidence/oppo-markup-repair-90c2552c5cfb4fbdab25269aaf7dfbb7/proof.json",
+            "sha256": "3dcdd5430e9518163d0ba5ffed7c4ea220fcc166fa8b27519b11827d7ca3a3e2"
+          }
+        },
+        {
+          "scopes": [
+            {
+              "manifest": "huawei-oppo-BI3-job.json",
+              "index": 0
+            },
+            {
+              "manifest": "huawei-oppo-BI3-job.json",
+              "index": 1
+            }
+          ],
+          "notes": 2,
+          "native": {
+            "path": ".private/evidence/oppo-target-native-d34b1db124b24ee4abff02f521137073.json",
+            "sha256": "6d0ead66b16e97f2b169bf3103bbb03460e0747098e9b5325620383486f70e3a"
+          },
+          "repair": {
+            "path": ".private/evidence/oppo-markup-repair-3d882dbd18b94dbeb94fdd156cbf6280/proof.json",
+            "sha256": "754f537e68b35648b81adfeec9541cc5441987d40af00ba27b9a2013d63614f5"
+          }
+        },
+        {
+          "scopes": [
+            {
+              "manifest": "xiaomi-oppo-BI5-job.json",
+              "index": 0
+            },
+            {
+              "manifest": "xiaomi-oppo-BI5-job.json",
+              "index": 1
+            }
+          ],
+          "notes": 2,
+          "native": {
+            "path": ".private/evidence/oppo-target-native-d5681de793574a6e8f0312895380927f.json",
+            "sha256": "17353832a68ab055c33b7c0e58fbbfd37177ed5716988397ffeb7c61817809c8"
+          },
+          "repair": {
+            "path": ".private/evidence/oppo-markup-repair-c8762ccc760d4afdb03389dcff5d81d6/proof.json",
+            "sha256": "dc99299d01ddfa04343ac89d1e54434b228dbc6e866f4f9f3291dfdc70a0b4db"
+          }
+        },
+        {
+          "scopes": [
+            {
+              "manifest": "honor-oppo-BI7-job.json",
+              "index": 0
+            },
+            {
+              "manifest": "honor-oppo-BI7-job.json",
+              "index": 1
+            }
+          ],
+          "notes": 2,
+          "native": {
+            "path": ".private/evidence/oppo-target-native-e23ef98a324d48179c4fbfa3775a95c7.json",
+            "sha256": "04517fb7754852b4dd8a8fc7a344c895f046d8d7ca0b49f82bdafe2f34f8b3eb"
+          },
+          "repair": {
+            "path": ".private/evidence/oppo-markup-repair-a8a92e94ab2d46b18a3f11a566104e80/proof.json",
+            "sha256": "870b4be8c558d579c8da4b8634305a26b244f4f0246699596581fbe0c5f6d927"
+          }
+        },
+        {
+          "scopes": [
+            {
+              "manifest": "meizu-oppo-BI9-job.json",
+              "index": 0
+            },
+            {
+              "manifest": "meizu-oppo-BI9-job.json",
+              "index": 1
+            }
+          ],
+          "notes": 2,
+          "native": {
+            "path": ".private/evidence/oppo-target-native-6f394a7c8caf4c02923e80068bb5e644.json",
+            "sha256": "8b361ca6c6985563c78ef7ec9a30fbe7eafb6158db53e9c5c617e9e529035f31"
+          },
+          "repair": {
+            "path": ".private/evidence/oppo-markup-repair-4ea8f620a3034fd3aba9d79f3951c4df/proof.json",
+            "sha256": "4fb0e870e77342947cd839af6ea6ed44d2d493e0df93c24822f6cfe8a762c1c3"
+          }
+        },
+        {
+          "scopes": [
+            {
+              "manifest": "vivo-oppo-BI11-job.json",
+              "index": 0
+            },
+            {
+              "manifest": "vivo-oppo-BI11-job.json",
+              "index": 1
+            }
+          ],
+          "notes": 2,
+          "native": {
+            "path": ".private/evidence/oppo-target-native-6903b7c1e21c4c80bbbb775830e63019.json",
+            "sha256": "610c99f794bb8897ec1d7087317f7ccc292f8c82e0b36467424eefd26e44dc5f"
+          },
+          "repair": {
+            "path": ".private/evidence/oppo-markup-repair-87e781a2815a404fb10fbcfc1d0bb0e4/proof.json",
+            "sha256": "5fe5dc274f3fed488cf4780d183e43fbeb0cb018b251d8de28336fecc7d8033c"
+          }
+        }
+      ],
+      "source_post_validity": "Original observation timestamps only; subsequent authorized markup repairs have separate proofs.",
+      "scope": "OR1 and six incoming pairs; 12 markup repairs and BI5[0] unchanged; no added notes.",
+      "references": [
+        {
+          "path": ".private/checkpoints/BI-approval-facts.json",
+          "sha256": "b6fee07f124260e73d1861db19a6c529786cdd0561178ceed959dd5706c21a63"
+        },
+        {
+          "path": ".private/checkpoints/oppo-markup-closeout-state.json",
+          "sha256": "5234794f60960f0774e44b0583b9a2958e6f7ba830b141a5ee9d7507484d8b53"
+        },
+        {
+          "path": ".private/evidence/artifacts-BI.json",
+          "sha256": "315133a7b3948aa451770d8fee2ac1c8e3f35cadaea0b8449fdb6d42018232c1"
+        },
+        {
+          "path": ".private/evidence/installer-BI/evidence.json",
+          "sha256": "fdfc857e52f5abbd5fba7bf2f6320694408860a60f401ffce41a2bd2e851eb14"
+        },
+        {
+          "path": ".private/evidence/frozen-login-isolation-f802d89652024fe59b15268f9b141a4f.json",
+          "sha256": "02c7cc1f922b0b91a1ffd4798987bfed2b14f98d3db9373c71ecad99bbcc83f7"
+        },
+        {
+          "path": ".private/build-BI.log",
+          "sha256": "dc351a37a2c785b562f58cd682ca754dbb1ff18bacf09afe1bf83e6c96740969"
+        }
+      ],
+      "installer_sha256": "c51911f366d9be980dc95028112947253773cdf3456cca1483caee7aaf70d5bb",
+      "portable_sha256": "5dcadc6158e16e06584d606135830ace20ea20817e82eedc7e57e87fcb4131f9",
+      "source_archive": "Final hash is produced separately in dist/SHA256SUMS.txt and .private/evidence/final-BI.json.",
+      "limitations": [
+        "OPPO code rendering is plain text; archival markup retained.",
+        "Huawei BI4 original 22 bodies not rechecked.",
+        "Host checks are not clean Windows 10/11, full UI scaling or phone synchronization acceptance.",
+        "Xiaomi known visual scope only; Meizu table borders downgraded; Vivo private notes excluded."
+      ]
+    }
+  }
+}

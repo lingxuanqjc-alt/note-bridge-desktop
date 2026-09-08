@@ -1,0 +1,26 @@
+# UTF-8
+VSVersionInfo(
+    ffi=FixedFileInfo(
+        filevers=(1, 0, 0, 0),
+        prodvers=(1, 0, 0, 0),
+        mask=0x3F,
+        flags=0,
+        OS=0x40004,
+        fileType=1,
+        subtype=0,
+        date=(0, 0),
+    ),
+    kids=[
+        StringFileInfo([
+            StringTable("080404B0", [
+                StringStruct("FileDescription", "笔记互迁"),
+                StringStruct("FileVersion", "1.0.0.0"),
+                StringStruct("ProductName", "笔记互迁"),
+                StringStruct("ProductVersion", "1.0.0.0"),
+                StringStruct("OriginalFilename", "NoteBridge.exe"),
+                StringStruct("LegalCopyright", "Copyright (c) 2026 Note Bridge contributors"),
+            ]),
+        ]),
+        VarFileInfo([VarStruct("Translation", [2052, 1200])]),
+    ],
+)

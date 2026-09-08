@@ -1,0 +1,526 @@
+[
+  {
+    "name": "altgraph",
+    "version": "0.17.5",
+    "license": "MIT",
+    "sources": [
+      "Documentation, https://altgraph.readthedocs.io/en/latest/",
+      "Issue tracker, https://github.com/ronaldoussoren/altgraph/issues",
+      "Repository, https://github.com/ronaldoussoren/altgraph"
+    ],
+    "license_files": [
+      "altgraph/LICENSE"
+    ]
+  },
+  {
+    "name": "annotated-types",
+    "version": "0.8.0",
+    "license": "MIT",
+    "sources": [
+      "Homepage, https://github.com/annotated-types/annotated-types",
+      "Source, https://github.com/annotated-types/annotated-types",
+      "Changelog, https://github.com/annotated-types/annotated-types/releases"
+    ],
+    "license_files": [
+      "annotated-types/LICENSE"
+    ]
+  },
+  {
+    "name": "boto3",
+    "version": "1.43.89",
+    "license": "Apache-2.0",
+    "sources": [
+      "Documentation, https://docs.aws.amazon.com/boto3/latest/",
+      "Source, https://github.com/boto/boto3"
+    ],
+    "license_files": [
+      "boto3/LICENSE",
+      "boto3/NOTICE"
+    ]
+  },
+  {
+    "name": "botocore",
+    "version": "1.43.89",
+    "license": "Apache-2.0",
+    "sources": [
+      "https://github.com/boto/botocore"
+    ],
+    "license_files": [
+      "botocore/LICENSE.txt",
+      "botocore/NOTICE"
+    ]
+  },
+  {
+    "name": "bottle",
+    "version": "0.13.4",
+    "license": "MIT",
+    "sources": [
+      "Source, https://github.com/bottlepy/bottle"
+    ],
+    "license_files": [
+      "bottle/LICENSE"
+    ]
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "license": "MPL-2.0",
+    "sources": [
+      "Source, https://github.com/certifi/python-certifi"
+    ],
+    "license_files": [
+      "certifi/LICENSE"
+    ]
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "license": "MIT-0",
+    "sources": [
+      "Documentation, https://cffi.readthedocs.io/",
+      "Changelog, https://cffi.readthedocs.io/en/latest/whatsnew.html",
+      "Download, https://github.com/python-cffi/cffi/releases",
+      "Contact, https://groups.google.com/forum/#!forum/python-cffi",
+      "Source Code, https://github.com/python-cffi/cffi",
+      "Issue Tracker, https://github.com/python-cffi/cffi/issues"
+    ],
+    "license_files": [
+      "cffi/LICENSE"
+    ]
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.1",
+    "license": "MIT",
+    "sources": [
+      "Changelog, https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md",
+      "Documentation, https://charset-normalizer.readthedocs.io/",
+      "Code, https://github.com/jawah/charset_normalizer",
+      "Issue tracker, https://github.com/jawah/charset_normalizer/issues"
+    ],
+    "license_files": [
+      "charset-normalizer/LICENSE"
+    ]
+  },
+  {
+    "name": "clr_loader",
+    "version": "0.3.1",
+    "license": "Unspecified in wheel metadata",
+    "sources": [
+      "Sources, https://github.com/pythonnet/clr-loader",
+      "Documentation, https://pythonnet.github.io/clr-loader/"
+    ],
+    "license_files": [
+      "clr_loader/LICENSE"
+    ]
+  },
+  {
+    "name": "colorama",
+    "version": "0.4.6",
+    "license": "Unspecified in wheel metadata",
+    "sources": [
+      "Homepage, https://github.com/tartley/colorama"
+    ],
+    "license_files": [
+      "colorama/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "idna",
+    "version": "3.19",
+    "license": "BSD-3-Clause",
+    "sources": [
+      "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.md",
+      "Issue tracker, https://github.com/kjd/idna/issues",
+      "Source, https://github.com/kjd/idna"
+    ],
+    "license_files": [
+      "idna/LICENSE.md"
+    ]
+  },
+  {
+    "name": "iniconfig",
+    "version": "2.3.0",
+    "license": "MIT",
+    "sources": [
+      "Homepage, https://github.com/pytest-dev/iniconfig"
+    ],
+    "license_files": [
+      "iniconfig/LICENSE"
+    ]
+  },
+  {
+    "name": "jmespath",
+    "version": "1.1.0",
+    "license": "MIT",
+    "sources": [
+      "https://github.com/jmespath/jmespath.py"
+    ],
+    "license_files": [
+      "jmespath/LICENSE"
+    ]
+  },
+  {
+    "name": "lxml",
+    "version": "6.1.3",
+    "license": "BSD-3-Clause",
+    "sources": [
+      "Source, https://github.com/lxml/lxml",
+      "Bug Tracker, https://bugs.launchpad.net/lxml"
+    ],
+    "license_files": [
+      "lxml/LICENSE.txt",
+      "lxml/LICENSES.txt"
+    ]
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license": "Apache-2.0 OR BSD-2-Clause",
+    "sources": [
+      "Documentation, https://packaging.pypa.io/",
+      "Source, https://github.com/pypa/packaging"
+    ],
+    "license_files": [
+      "packaging/LICENSE",
+      "packaging/LICENSE.APACHE",
+      "packaging/LICENSE.BSD"
+    ]
+  },
+  {
+    "name": "pefile",
+    "version": "2024.8.26",
+    "license": "MIT",
+    "sources": [
+      "https://github.com/erocarrera/pefile"
+    ],
+    "license_files": [
+      "pefile/LICENSE"
+    ]
+  },
+  {
+    "name": "pillow",
+    "version": "12.3.0",
+    "license": "MIT-CMU",
+    "sources": [
+      "Release notes, https://pillow.readthedocs.io/en/stable/releasenotes/index.html",
+      "Changelog, https://github.com/python-pillow/Pillow/releases",
+      "Documentation, https://pillow.readthedocs.io",
+      "Funding, https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=pypi",
+      "Homepage, https://python-pillow.github.io",
+      "Mastodon, https://fosstodon.org/@pillow",
+      "Source, https://github.com/python-pillow/Pillow"
+    ],
+    "license_files": [
+      "pillow/LICENSE"
+    ]
+  },
+  {
+    "name": "pluggy",
+    "version": "1.6.0",
+    "license": "MIT",
+    "sources": [
+      ""
+    ],
+    "license_files": [
+      "pluggy/LICENSE"
+    ]
+  },
+  {
+    "name": "proxy_tools",
+    "version": "0.1.0",
+    "license": "MIT",
+    "sources": [
+      "http://github.com/jtushman/proxy_tools"
+    ],
+    "license_files": []
+  },
+  {
+    "name": "pycparser",
+    "version": "3.0",
+    "license": "BSD-3-Clause",
+    "sources": [
+      "Homepage, https://github.com/eliben/pycparser"
+    ],
+    "license_files": [
+      "pycparser/LICENSE"
+    ]
+  },
+  {
+    "name": "pycryptodome",
+    "version": "3.23.0",
+    "license": "BSD, Public Domain",
+    "sources": [
+      "Source, https://github.com/Legrandin/pycryptodome/",
+      "Changelog, https://www.pycryptodome.org/src/changelog"
+    ],
+    "license_files": [
+      "pycryptodome/LICENSE.rst"
+    ]
+  },
+  {
+    "name": "pydantic",
+    "version": "2.13.5",
+    "license": "MIT",
+    "sources": [
+      "Homepage, https://github.com/pydantic/pydantic",
+      "Documentation, https://docs.pydantic.dev",
+      "Funding, https://github.com/sponsors/samuelcolvin",
+      "Source, https://github.com/pydantic/pydantic",
+      "Changelog, https://docs.pydantic.dev/latest/changelog/"
+    ],
+    "license_files": [
+      "pydantic/LICENSE"
+    ]
+  },
+  {
+    "name": "pydantic_core",
+    "version": "2.46.5",
+    "license": "MIT",
+    "sources": [
+      "Funding, https://github.com/sponsors/samuelcolvin",
+      "Homepage, https://github.com/pydantic",
+      "Source, https://github.com/pydantic/pydantic/tree/main/pydantic-core"
+    ],
+    "license_files": [
+      "pydantic_core/LICENSE"
+    ]
+  },
+  {
+    "name": "Pygments",
+    "version": "2.21.0",
+    "license": "BSD-2-Clause",
+    "sources": [
+      "Homepage, https://pygments.org",
+      "Documentation, https://pygments.org/docs",
+      "Source, https://github.com/pygments/pygments",
+      "Bug Tracker, https://github.com/pygments/pygments/issues",
+      "Changelog, https://github.com/pygments/pygments/blob/master/CHANGES"
+    ],
+    "license_files": [
+      "Pygments/LICENSE"
+    ]
+  },
+  {
+    "name": "pyinstaller",
+    "version": "6.22.2",
+    "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+    "sources": [
+      "Homepage, https://pyinstaller.org",
+      "Documentation, https://pyinstaller.org",
+      "Source Code, https://github.com/pyinstaller/pyinstaller",
+      "Release Notes, https://pyinstaller.org/en/stable/CHANGES.html"
+    ],
+    "license_files": [
+      "pyinstaller/COPYING.txt"
+    ]
+  },
+  {
+    "name": "pyinstaller-hooks-contrib",
+    "version": "2026.7",
+    "license": "Unspecified in wheel metadata",
+    "sources": [
+      "https://github.com/pyinstaller/pyinstaller-hooks-contrib"
+    ],
+    "license_files": [
+      "pyinstaller-hooks-contrib/LICENSE"
+    ]
+  },
+  {
+    "name": "pytest",
+    "version": "9.1.1",
+    "license": "MIT",
+    "sources": [
+      "Changelog, https://docs.pytest.org/en/stable/changelog.html",
+      "Contact, https://docs.pytest.org/en/stable/contact.html",
+      "Funding, https://docs.pytest.org/en/stable/sponsor.html",
+      "Homepage, https://docs.pytest.org/en/latest/",
+      "Source, https://github.com/pytest-dev/pytest",
+      "Tracker, https://github.com/pytest-dev/pytest/issues"
+    ],
+    "license_files": [
+      "pytest/LICENSE"
+    ]
+  },
+  {
+    "name": "python-dateutil",
+    "version": "2.9.0.post0",
+    "license": "Dual License",
+    "sources": [
+      "Documentation, https://dateutil.readthedocs.io/en/stable/",
+      "Source, https://github.com/dateutil/dateutil"
+    ],
+    "license_files": [
+      "python-dateutil/LICENSE"
+    ]
+  },
+  {
+    "name": "python-docx",
+    "version": "1.2.0",
+    "license": "MIT",
+    "sources": [
+      "Changelog, https://github.com/python-openxml/python-docx/blob/master/HISTORY.rst",
+      "Documentation, https://python-docx.readthedocs.org/en/latest/",
+      "Homepage, https://github.com/python-openxml/python-docx",
+      "Repository, https://github.com/python-openxml/python-docx"
+    ],
+    "license_files": [
+      "python-docx/LICENSE"
+    ]
+  },
+  {
+    "name": "pythonnet",
+    "version": "3.1.0",
+    "license": "MIT",
+    "sources": [
+      "Homepage, https://pythonnet.github.io/",
+      "Sources, https://github.com/pythonnet/pythonnet"
+    ],
+    "license_files": [
+      "pythonnet/LICENSE"
+    ]
+  },
+  {
+    "name": "pywebview",
+    "version": "6.2.1",
+    "license": "BSD 3-Clause License\n\nCopyright (c) 2014-2017, Roman Sirokov\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\n* Neither the name of the copyright holder nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+    "sources": [
+      "Homepage, https://pywebview.flowrl.com/",
+      "Repository, https://github.com/r0x0r/pywebview"
+    ],
+    "license_files": [
+      "pywebview/LICENSE"
+    ]
+  },
+  {
+    "name": "pywin32-ctypes",
+    "version": "0.2.3",
+    "license": "BSD-3-Clause",
+    "sources": [
+      "https://github.com/enthought/pywin32-ctypes"
+    ],
+    "license_files": [
+      "pywin32-ctypes/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "license": "Apache-2.0",
+    "sources": [
+      "Documentation, https://requests.readthedocs.io",
+      "Source, https://github.com/psf/requests"
+    ],
+    "license_files": [
+      "requests/LICENSE",
+      "requests/NOTICE"
+    ]
+  },
+  {
+    "name": "ruff",
+    "version": "0.16.6",
+    "license": "MIT",
+    "sources": [
+      "Changelog, https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
+      "Documentation, https://docs.astral.sh/ruff/",
+      "Repository, https://github.com/astral-sh/ruff"
+    ],
+    "license_files": [
+      "ruff/LICENSE"
+    ]
+  },
+  {
+    "name": "s3transfer",
+    "version": "0.19.2",
+    "license": "Apache License 2.0",
+    "sources": [
+      "https://github.com/boto/s3transfer"
+    ],
+    "license_files": [
+      "s3transfer/LICENSE.txt",
+      "s3transfer/NOTICE.txt"
+    ]
+  },
+  {
+    "name": "setuptools",
+    "version": "84.0.0",
+    "license": "MIT",
+    "sources": [
+      "Source, https://github.com/pypa/setuptools",
+      "Documentation, https://setuptools.pypa.io/",
+      "Changelog, https://setuptools.pypa.io/en/stable/history.html"
+    ],
+    "license_files": [
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE.APACHE",
+      "setuptools/LICENSE.BSD",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE.txt",
+      "setuptools/LICENSE"
+    ]
+  },
+  {
+    "name": "six",
+    "version": "1.17.0",
+    "license": "MIT",
+    "sources": [
+      "https://github.com/benjaminp/six"
+    ],
+    "license_files": [
+      "six/LICENSE"
+    ]
+  },
+  {
+    "name": "typing-inspection",
+    "version": "0.4.4",
+    "license": "MIT",
+    "sources": [
+      "Homepage, https://github.com/pydantic/typing-inspection",
+      "Documentation, https://pydantic.github.io/typing-inspection/dev/",
+      "Source, https://github.com/pydantic/typing-inspection",
+      "Changelog, https://github.com/pydantic/typing-inspection/blob/main/HISTORY.md"
+    ],
+    "license_files": [
+      "typing-inspection/LICENSE"
+    ]
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license": "PSF-2.0",
+    "sources": [
+      "Bug Tracker, https://github.com/python/typing_extensions/issues",
+      "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+      "Documentation, https://typing-extensions.readthedocs.io/",
+      "Home, https://github.com/python/typing_extensions",
+      "Q & A, https://github.com/python/typing/discussions",
+      "Repository, https://github.com/python/typing_extensions"
+    ],
+    "license_files": [
+      "typing_extensions/LICENSE"
+    ]
+  },
+  {
+    "name": "urllib3",
+    "version": "2.7.0",
+    "license": "MIT",
+    "sources": [
+      "Changelog, https://github.com/urllib3/urllib3/blob/main/CHANGES.rst",
+      "Documentation, https://urllib3.readthedocs.io",
+      "Code, https://github.com/urllib3/urllib3",
+      "Issue tracker, https://github.com/urllib3/urllib3/issues"
+    ],
+    "license_files": [
+      "urllib3/LICENSE.txt"
+    ]
+  }
+]
