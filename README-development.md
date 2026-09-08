@@ -1,5 +1,7 @@
 # 笔记互迁 / note-bridge-desktop
 
+> 当前入口：[验证摘要](docs/VERIFICATION.md) · [项目案例](docs/PROJECT-CASE.md) · [界面演示](docs/DEMO.md)。下面的开发快照保留原日期和范围。
+
 > 版本状态（2026-09-08）：当前正式版本为 **1.0.0**，以[1.0.0 发布范围](docs/RELEASE-SCOPE-1.0.0.md)和[发布说明](docs/RELEASE-NOTES-1.0.0.md)为准。下文保留 **0.1.0a1 阶段的历史快照**；其中“当前”“预览”“待发布”、测试数量和工件 SHA256 均对应当时，不代表 1.0.0 的构建或发布审核结果。原广泛验收的缺项和真实登记状态保留，不改写为通过。
 
 Windows 桌面笔记导出与跨平台迁移工具，Python 3.13 + pywebview 6.2.1 + WebView2，React + TypeScript。

@@ -6,14 +6,23 @@
 <p align="center">七平台云端互迁 · 四种格式导出 · 免费开源</p>
 <p align="center">
   <a href="https://github.com/lingxuanqjc-alt/note-bridge-desktop/releases/tag/v1.0.0">下载 Windows 版</a> ·
+  <a href="docs/DEMO.md">观看演示</a> ·
+  <a href="docs/PROJECT-CASE.md">项目案例</a> ·
+  <a href="docs/VERIFICATION.md">验证记录</a> ·
   <a href="docs/GUIDE.md">使用指南</a> ·
   <a href="docs/COMPATIBILITY.md">兼容性说明</a> ·
   <a href="https://github.com/lingxuanqjc-alt/note-bridge-desktop/issues/new/choose">反馈问题</a>
 </p>
 
-笔记互迁是一款 Windows 桌面工具，帮助你把笔记从一个品牌的云端迁入另一个平台，或导出成可以自己保存、阅读和搜索的本地文件。
+换了手机品牌，旧笔记却留在原来的云端。笔记互迁是一款 Windows 桌面工具，帮助你选择具体笔记迁入另一个平台，或导出成可以自己保存、阅读和搜索的本地文件。
 
 支持 **小米、OPPO、vivo、华为备忘录、荣耀、魅族、WPS**。当前版本为 **1.0.0 正式版**，具体支持范围和格式差异见下文。
+
+![笔记互迁真实前端：七平台选择与四种导出格式，合成数据演示](assets/portfolio/export-formats.png)
+
+*真实前端运行截图，使用合成数据与模拟桥接；未连接真实账号或发送云端请求。[查看短演示与边界](docs/DEMO.md)。*
+
+**English:** Note Bridge is a Windows app for exporting notes to TXT, Markdown, HTML or DOCX and migrating selected notes across seven cloud platforms. It preserves source notes and reports format differences and uncertain writes. [Case study](docs/PROJECT-CASE.md#english-summary) · [Validation scope](docs/VERIFICATION.md)
 
 ## 用它做什么
 
@@ -74,6 +83,6 @@
 
 通过 [Issues](https://github.com/lingxuanqjc-alt/note-bridge-desktop/issues/new/choose) 提交问题或建议。请说明软件版本、迁移方向、具体步骤及实际结果，并使用自行生成的内容举例。
 
-[参与贡献](CONTRIBUTING.md) · [安全反馈](SECURITY.md) · [开发与构建](README-development.md)
+[参与贡献](CONTRIBUTING.md) · [安全反馈](SECURITY.md) · [开发与构建](README-development.md) · [项目案例](docs/PROJECT-CASE.md) · [当前验证](docs/VERIFICATION.md)
 
 登录在厂商官方页面完成。请勿在反馈中提交密码、验证码、Cookie、令牌或私人笔记。自写代码采用 [MIT 许可](LICENSE)，第三方依赖许可见 [licenses](licenses/README.md)。
