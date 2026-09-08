@@ -14,7 +14,7 @@
 | `npm run build --prefix ui` | TypeScript 检查与 Vite 构建通过 | 前端可构建，不代替桌面桥接 |
 | 实际前端＋合成桥接交互 | 5 项检查通过，0 页面异常，0 外部页面请求 | 格式入口、迁移方向、不兼容阻断、仅选兼容项、待核对提示 |
 | 展示素材 | 三张截图已查看；GIF 5 帧/12.5 秒；WebM 15.68 秒且浏览器解码正常 | 仅为[合成界面演示](DEMO.md) |
-| 远程 GitHub Actions | 本记录建立时尚未运行 | 应以对应提交的 Actions 结果为准 |
+| 远程 GitHub Actions | [PR #1 运行 34193927070](https://github.com/lingxuanqjc-alt/note-bridge-desktop/actions/runs/34193927070) 成功；**135 passed，29.34 秒**，Ruff 与 TypeScript/Vite 构建通过 | 对应 PR #1 的 head [`d7d9d55`](https://github.com/lingxuanqjc-alt/note-bridge-desktop/commit/d7d9d55b518a6c5dab48562aa150ea92ad7c350c)；其他提交应以各自实际 Actions 记录为准，不沿用本次结果 |
 
 首次本地 pytest 因系统默认临时目录权限被拒绝而初始化失败；改用新的仓库临时目录时也曾因父目录尚未创建而失败。创建 `.cache` 并使用下列独立目录后，所选 135 项全部通过。未修改系统权限、产品源码或测试断言。
 
