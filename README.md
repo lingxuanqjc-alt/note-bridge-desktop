@@ -13,6 +13,12 @@
   <a href="docs/COMPATIBILITY.md">兼容性说明</a> ·
   <a href="https://github.com/lingxuanqjc-alt/note-bridge-desktop/issues/new/choose">反馈问题</a>
 </p>
+<p align="center">
+  <a href="https://github.com/lingxuanqjc-alt/note-bridge-desktop/releases/latest"><img src="https://img.shields.io/github/v/release/lingxuanqjc-alt/note-bridge-desktop?label=%E7%89%88%E6%9C%AC" alt="当前版本"></a>
+  <a href="https://github.com/lingxuanqjc-alt/note-bridge-desktop/actions/workflows/ci.yml"><img src="https://github.com/lingxuanqjc-alt/note-bridge-desktop/actions/workflows/ci.yml/badge.svg" alt="Offline checks"></a>
+  <img src="https://img.shields.io/badge/%E5%B9%B3%E5%8F%B0-Windows%2010%2F11%20x64-blue" alt="Windows 10/11 x64">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-MIT-green" alt="MIT 许可"></a>
+</p>
 
 换了手机品牌，旧笔记却留在原来的云端。笔记互迁是一款 Windows 桌面工具，帮助你选择具体笔记迁入另一个平台，或导出成可以自己保存、阅读和搜索的本地文件。
 
@@ -23,6 +29,29 @@
 *真实前端运行截图，使用合成数据与模拟桥接；未连接真实账号或发送云端请求。[查看短演示与边界](docs/DEMO.md)。*
 
 **English:** Note Bridge is a Windows app for exporting notes to TXT, Markdown, HTML or DOCX and migrating selected notes across seven cloud platforms. It preserves source notes and reports format differences and uncertain writes. [Case study](docs/PROJECT-CASE.md#english-summary) · [Validation scope](docs/VERIFICATION.md)
+
+<details>
+<summary><strong>目录</strong></summary>
+
+- [快速上手](#快速上手)
+- [用它做什么](#用它做什么)
+- [下载与启动](#下载与启动)
+- [开始迁移](#开始迁移)
+- [支持范围](#支持范围)
+- [常见问题](#常见问题)
+- [反馈与贡献](#反馈与贡献)
+
+</details>
+
+## 快速上手
+
+第一次使用，建议按 **安装 → 先试导出 → 再迁移** 的顺序：导出只需登录来源账号，结果保存在本地，最容易熟悉流程。
+
+1. **下载安装。** 运行 [Windows 安装包](https://github.com/lingxuanqjc-alt/note-bridge-desktop/releases/download/v1.0.0/NoteBridge-1.0.0-setup.exe)，完成后双击桌面“笔记互迁”。需要 Windows 10／11 x64 与 Microsoft WebView2 Runtime；缺少 WebView2 时安装程序会引导前往微软官方页面。
+2. **先试导出。** 打开“导出笔记”页：登录来源平台 → 获取笔记 → 选择 TXT／Markdown／HTML／Word 与文件模式 → 导出到本地。
+3. **再做迁移。** 打开“迁移笔记”页，登录迁出、迁入双方账号 → 点击“开始迁移” → 勾选笔记 → 点击“确认迁移 N 条”。完成后到目标端核对正文、图片与分组。
+
+迁移向目标云端新增笔记，保留来源。每一步的细节与提示含义见[使用指南](docs/GUIDE.md)，下载文件与校验见[下载与启动](#下载与启动)。
 
 ## 用它做什么
 
@@ -49,6 +78,8 @@
 
 ## 开始迁移
 
+> 迁移向目标云端**新增**笔记，保留来源。可以先导出备份，再选择一条笔记熟悉流程。
+
 1. **确认来源。** 来源云端已有笔记即可；尚未上传的内容，需要先从原手机开启笔记云同步，等待上传。
 2. **登录双方账号。** 在软件“迁移笔记”页选择迁出、迁入平台，在打开的官方窗口完成登录，再检查账号状态。
 3. **选择笔记并迁移。** 点击“开始迁移”，在随后出现的列表中勾选笔记、查看格式提示，再点击“确认迁移 N 条”。完成后查看结果，并到目标端核对正文、图片与分组。
@@ -61,11 +92,23 @@
 
 ## 支持范围
 
+七个平台均支持读取与本地导出，迁入入口均已开放，并按各自限制执行：
+
+| 平台 | 本地导出 | 云端迁入 | 平台特有说明 |
+| --- | :---: | :---: | --- |
+| 小米 | ✓ | ✓ | 迁入限已核实的非加密账号，单张图片不超过 4 MiB |
+| OPPO | ✓ | ✓ | 服务端要求图片分片上传时，本版会停止处理并给出提示 |
+| vivo | ✓ | ✓ | — |
+| 华为备忘录 | ✓ | ✓ | 对应云服务为“备忘录” |
+| 荣耀 | ✓ | ✓ | — |
+| 魅族 | ✓ | ✓ | — |
+| WPS | ✓ | ✓ | — |
+
+各平台通用：
+
 - **正文、分组与图片：** 在目标平台支持的范围内转换；当前云端迁入图片限 PNG/JPEG。音视频和其他附件可按支持范围导出到本地。
 - **富文本差异：** 表格、代码和部分文字样式可能转为普通文字，软件会报告差异；专有手写、加密内容等不能视为全面兼容。
-- **小米：** 迁入限已核实的非加密账号，单张图片不超过 4 MiB。
-- **OPPO：** 服务端要求图片分片上传时，本版会停止处理并给出提示。
-- **华为：** 对应云服务为“备忘录”。登录验证、云空间和网络条件仍由各厂商决定。
+- 登录验证、云空间和网络条件仍由各厂商决定。
 
 各平台的具体差异见[兼容性说明](docs/COMPATIBILITY.md)。
 
