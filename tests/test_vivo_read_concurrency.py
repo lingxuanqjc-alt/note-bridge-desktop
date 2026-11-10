@@ -158,10 +158,30 @@ def test_pairs_keep_listing_order_and_finish_before_serial_details_and_assets(tm
     provider, context, store, endpoint, wires, task_threads = setup_fetch(tmp_path, monkeypatch, server_key)
     endpoint.rows[0]["resources"] = True
     endpoint.rows[3]["resources"] = True
+    # Both reads of a pair must be in flight at the same instant. Waiting on
+    # endpoint.finished["1"] from body 0 does not prove that: submission order is not
+    # execution order, so the pool may run 1 to completion before 0 even starts, and
+    # the old assertion still passed while maximum stayed 1. A per-pair rendezvous can
+    # only be satisfied by genuine concurrency — a serialized provider times out.
+    pair_members = {}
+    for index in range(len(endpoint.rows)):
+        pair_members.setdefault(index // 2, []).append(str(index))
+    rendezvous = {}
+    for members in pair_members.values():
+        # One barrier per pair, shared by both of its notes — a comprehension would
+        # build a fresh Barrier per key and every reader would wait alone.
+        barrier = threading.Barrier(len(members), timeout=5)
+        for guid in members:
+            rendezvous[guid] = barrier
+    assert rendezvous["0"] is rendezvous["1"]
+    violations = []
 
     def body(guid):
-        if guid == "0":
-            assert endpoint.finished["1"].wait(3), "The second body should run while the first is pending."
+        try:
+            rendezvous[guid].wait()
+        except threading.BrokenBarrierError:
+            violations.append(guid)
+            rendezvous[guid].abort()
         return 200, (f'<vnote-image guid="asset-{guid}"></vnote-image>' if guid in ("0", "3") else f"<p>{guid}</p>")
 
     endpoint.body = body
@@ -174,6 +194,7 @@ def test_pairs_keep_listing_order_and_finish_before_serial_details_and_assets(tm
 
     monkeypatch.setattr(vivo, "parse_entry", parse)
     fetch_snapshot(provider, store, context)
+    assert not violations, f"正文 {violations} 与同批的另一篇从未同时在途，请求被串行化了。"
     assert parsed == ["0", "1", "2", "3", "4"]
     assert endpoint.maximum == 2 and len(endpoint.body_sessions) == 2
     assert endpoint.attempts == Counter({str(i): 1 for i in range(5)})
