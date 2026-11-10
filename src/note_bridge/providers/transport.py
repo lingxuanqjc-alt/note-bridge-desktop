@@ -68,10 +68,19 @@ class Transport:
         return_redirects: bool = False,
         check_cancel: Callable = lambda: None,
         wait: Callable[[float], None] | None = None,
+        origin: str | None = None,
         **kwargs,
     ):
         if not path.startswith("/") or path.startswith("//"):
             raise BridgeError("unsafe_url", "平台请求地址不正确。")
+        # 个别平台的旧版服务在另一台主机上（例如 OPPO 的 ck-rest-cn.oppo.com）。
+        # 只允许同一平台的授权域名，绝不放行任意 URL。
+        base = self.origin
+        if origin:
+            host = urlparse(origin).hostname or ""
+            if urlparse(origin).scheme != "https" or not host_matches(host, self.domains):
+                raise BridgeError("unsafe_url", "平台请求地址不正确。")
+            base = origin.rstrip("/")
         if return_redirects and (write or method not in ("GET", "HEAD")):
             raise ValueError("Redirect inspection is restricted to read-only requests")
         attempts = 1 if write else 3
@@ -79,7 +88,7 @@ class Transport:
             check_cancel()
             try:
                 response = self.session.request(
-                    method, self.origin + path, timeout=(10, 35), allow_redirects=False, **kwargs
+                    method, base + path, timeout=(10, 35), allow_redirects=False, **kwargs
                 )
             except requests.RequestException:
                 if write:
