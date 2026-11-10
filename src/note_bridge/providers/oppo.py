@@ -8,7 +8,7 @@ from lxml import html as lhtml
 from ..errors import BridgeError, WriteUncertain
 from ..exporter import stamp
 from ..models import Attachment, NoteDocument, PlatformId, account_fingerprint
-from ..richtext import block_html, numbered_blocks, parse_html, span_html
+from ..richtext import block_html, numbered_blocks, parse_html, plain_blocks, span_html
 from ..tasks import TaskContext
 from .base import SPECS, CreatedNote, Provider, Snapshot
 from .oppo_files import OppoFiles, image_bytes
@@ -16,6 +16,12 @@ from .oppo_groups import target_group
 from .oppo_wire import OppoRequest
 from .transport import Transport
 from .xiaomi import timestamp
+
+# 「旧版便签」是 OPPO 云端另一套服务，与新版 /web/note/v2 并存且数据不共用：
+# 新版接口对只有旧版数据的账号返回空列表，旧版笔记只能从 ck-rest 读。
+LEGACY_ORIGIN = "https://ck-rest-cn.oppo.com"
+LEGACY_PAGE_LIMIT = 500
+LEGACY_GROUP = "OPPO 旧版便签"
 
 
 def parse_entry(entry: dict, account: str, folders: dict[str, str], assets=None):
@@ -49,6 +55,35 @@ def parse_entry(entry: dict, account: str, folders: dict[str, str], assets=None)
         source_folder_name=folders.get(folder),
         created_at=timestamp(entry.get("createTime")),
         updated_at=timestamp(entry.get("updateTime")),
+    )
+
+
+def parse_legacy_entry(entry: dict, content: str, account: str):
+    """旧版便签是纯文本：只有 subject（标题）+ content（正文）+ noteUpdated。"""
+    if not isinstance(entry, dict) or not entry.get("noteGuid"):
+        raise BridgeError("protocol_changed", "OPPO 旧版便签结构无法识别。")
+    if content is not None and not isinstance(content, str):
+        raise BridgeError("protocol_changed", "OPPO 旧版便签正文结构无法识别。")
+    updated = entry.get("noteUpdated")
+    if isinstance(updated, str) and updated.strip().isdigit():
+        # 旧版把毫秒时间戳序列化成字符串，新版是数字；共用 timestamp() 只认数字。
+        updated = int(updated.strip())
+    body = (content or "").replace("\r\n", "\n")
+    warnings = []
+    if not body.strip():
+        warnings.append("这条 OPPO 旧版便签正文为空，只保留了标题与时间。")
+    return NoteDocument(
+        platform=PlatformId.OPPO,
+        account_id=account,
+        source_id=str(entry["noteGuid"]),
+        title=(entry.get("subject") or "").strip(),
+        blocks=plain_blocks(body),
+        attachments=[],
+        warnings=warnings,
+        source_folder_id=None,
+        source_folder_name=LEGACY_GROUP,
+        created_at=timestamp(updated),
+        updated_at=timestamp(updated),
     )
 
 
@@ -92,6 +127,56 @@ class OppoProvider(Provider):
         self._json("/web/note/v2/group-list-new")
         self.account_id = account_fingerprint(self.spec.id, str(user["ssoId"]))
         return self.account_id
+
+    def _legacy_json(self, path, params, **kwargs):
+        """旧版便签接口：GET + TOKENKEY 查询参数，返回 {"code":200,"body":{...}}。"""
+        token = self.transport.cookie("TOKENKEY")
+        if not token:
+            raise BridgeError("login_incomplete", "OPPO 旧版便签缺少登录凭据，请重新登录后再获取。")
+        payload = self.transport.json(
+            "GET",
+            path,
+            params={**params, "TOKENKEY": token},
+            origin=LEGACY_ORIGIN,
+            **kwargs,
+        )
+        if not isinstance(payload, dict) or payload.get("code") != 200:
+            raise BridgeError("platform_response", "OPPO 旧版便签未确认请求成功，请稍后重试。")
+        body = payload.get("body")
+        if not isinstance(body, dict):
+            raise BridgeError("protocol_changed", "OPPO 旧版便签结构无法识别。")
+        return body
+
+    def _legacy_listing(self, **kwargs):
+        rows, seen, cursor = [], set(), 0
+        for _ in range(LEGACY_PAGE_LIMIT):
+            body = self._legacy_json("/old-note/v1/list", {"last": cursor}, **kwargs)
+            content = body.get("content")
+            if content is None:
+                content = []
+            if not isinstance(content, list):
+                raise BridgeError("protocol_changed", "OPPO 旧版便签分页结构无法识别。")
+            for row in content:
+                if not isinstance(row, dict) or not row.get("noteGuid"):
+                    raise BridgeError("protocol_changed", "OPPO 旧版便签条目无法识别。")
+                if row["noteGuid"] in seen:
+                    continue
+                seen.add(row["noteGuid"])
+                rows.append(row)
+            if body.get("final") or not content:
+                return rows
+            following = body.get("last")
+            if following in (None, "", 0, "0") or following == cursor:
+                raise BridgeError("pagination_stalled", "OPPO 旧版便签分页没有继续前进。")
+            cursor = following
+        raise BridgeError("pagination_limit", "OPPO 旧版便签分页超出安全上限，未保存不完整目录。")
+
+    def _legacy_detail(self, guid: str, **kwargs) -> str:
+        body = self._legacy_json("/old-note/v1/info", {"id": guid}, **kwargs)
+        if str(body.get("noteGuid") or "") != guid:
+            raise BridgeError("detail_mismatch", "OPPO 旧版便签正文与请求笔记不一致。")
+        content = body.get("content")
+        return "" if content is None else content
 
     def _listing(self, page=1, **kwargs):
         data = self._json(
@@ -156,6 +241,28 @@ class OppoProvider(Provider):
             raise BridgeError("pagination_limit", "OPPO 分页超出安全上限，未保存不完整目录。")
         if len(rows) != total:
             raise BridgeError("pagination_incomplete", "OPPO 目录条数与平台统计不一致。")
+
+        # 旧版便签是另一套服务，数据不跟新版共用：只在旧版有笔记的账号，新版列表是空的。
+        # 读它的失败不该把新版笔记一起废掉，但要在报告里说清「这次没覆盖旧版」。
+        legacy_rows, legacy_ok = [], True
+        try:
+            legacy_rows = self._legacy_listing(**kwargs)
+        except BridgeError as error:
+            if error.code in ("cancelled", "session_expired", "request_forbidden"):
+                raise
+            legacy_ok = False
+            context.issue(
+                "legacy_unavailable",
+                f"OPPO 旧版便签目录未能读取（{error.message}），本次只获取了新版便签。",
+            )
+
+        if total == 0 and not legacy_rows:
+            # 别把「停在旧版视图」显示成一个莫名其妙的成功 0 篇。
+            context.issue(
+                "empty_listing",
+                "OPPO 新版与旧版便签都是空的。若你确实有笔记，请在官方页面确认是否停在"
+                "「切换至新版便签」之前的旧版视图，再重新获取。",
+            )
         handwritten = self._json(
             "/web/paint_note/v2/list",
             {
@@ -170,10 +277,11 @@ class OppoProvider(Provider):
         )
         if not isinstance(handwritten, dict) or type(handwritten.get("totalCount")) is not int:
             raise BridgeError("protocol_changed", "OPPO 手写笔记统计无法识别。")
-        complete = handwritten["totalCount"] == 0
-        if not complete:
+        complete = handwritten["totalCount"] == 0 and legacy_ok
+        if not complete and handwritten["totalCount"]:
             context.issue("proprietary_content", "账号中存在尚未转换的 OPPO 手写笔记。")
-        context.update(total=total + handwritten["totalCount"], stage="正在读取 OPPO 笔记正文。")
+        total = total + len(legacy_rows) + handwritten["totalCount"]
+        context.update(total=total, stage="正在读取 OPPO 笔记正文。")
         notes = []
         for index, row in enumerate(rows):
             # An empty version requests complete content, including when the list is already current.
@@ -206,11 +314,24 @@ class OppoProvider(Provider):
                 complete = False
                 context.issue(error.code, error.message, row["recordId"])
             context.update(completed=index + 1, succeeded=len(notes))
+        for offset, row in enumerate(legacy_rows, start=len(rows)):
+            guid = str(row["noteGuid"])
+            try:
+                content = self._legacy_detail(guid, **kwargs)
+                notes.append(parse_legacy_entry(row, content, self.account_id))
+            except BridgeError as error:
+                if error.code in ("cancelled", "session_expired", "request_forbidden", "network_error", "rate_limited"):
+                    raise
+                complete = False
+                context.issue(error.code, error.message, guid)
+            context.update(completed=offset + 1, succeeded=len(notes))
         original_account = self.account_id
         if self.probe() != original_account:
             raise BridgeError("account_changed", "读取期间 OPPO 账号发生变化，已停止保存。")
-        if self._listing(**kwargs)["totalCount"] != total:
+        if self._listing(**kwargs)["totalCount"] != total - len(legacy_rows) - handwritten["totalCount"]:
             raise BridgeError("snapshot_changed", "读取期间 OPPO 笔记总数发生变化，请重新获取。")
+        if legacy_ok and len(self._legacy_listing(**kwargs)) != len(legacy_rows):
+            raise BridgeError("snapshot_changed", "读取期间 OPPO 旧版便签数量发生变化，请重新获取。")
         return Snapshot(notes, complete)
 
     def validate_notes(self, notes):
