@@ -164,6 +164,14 @@ def _login_worker(platform, profile, connection):
             emit({"event": "failed", "code": "login_start_failed"})
             close()
             return
+        # Snapshots require the current page to belong to the official origin, so hold
+        # commands back until the first navigation settles. Not every backend exposes a
+        # `loaded` event, though: accessing it unconditionally raises AttributeError,
+        # which the startup guard below swallows into `login_start_failed` and takes the
+        # whole login window down. Treat a missing event as "already settled".
+        loaded = getattr(window.events, "loaded", None)
+        if loaded is not None:
+            loaded.wait(START_TIMEOUT)
         threading.Thread(target=commands, daemon=True).start()
 
     try:
