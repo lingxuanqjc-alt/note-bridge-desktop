@@ -109,15 +109,22 @@ class OppoProvider(Provider):
             },
             **kwargs,
         )
+        if not isinstance(data, dict):
+            raise BridgeError("protocol_changed", "OPPO 笔记分页结构无法识别。")
+        # 云端把空列表序列化成 null：新版 0 篇、或账号当前停在旧版便签视图时
+        # 返回 {"hasMore":false,"totalCount":0,"records":null}。这是合法空结果，
+        # 不是协议变更，否则「删空笔记 / 切旧版」会让整个获取任务直接失败。
+        records = data.get("records")
+        if records is None:
+            records = []
         if (
-            not isinstance(data, dict)
-            or not isinstance(data.get("records"), list)
+            not isinstance(records, list)
             or type(data.get("totalCount")) is not int
             or data["totalCount"] < 0
             or type(data.get("hasMore")) is not bool
         ):
             raise BridgeError("protocol_changed", "OPPO 笔记分页结构无法识别。")
-        return data
+        return {**data, "records": records}
 
     def fetch(self, context: TaskContext):
         if not self.account_id:
